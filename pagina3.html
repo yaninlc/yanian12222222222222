@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mas sobre ti</title>
+    <link rel="stylesheet" href="estilos/estilo_pagina3.css">
+</head>
+<body>
+    <div class="container">
+        <h1 align = "center">Formulario de Datos Personales</h1>
+        <form id="personalForm">
+            <input type="text" id="name" placeholder="Nombre" required />
+            <input type="text" id="lastname" placeholder="Apellido" required />
+            <input type="number" id="age" placeholder="Edad" required />
+            <input type="text" id="address" placeholder="Dirección" required />
+            <input type="text" id="phone" placeholder="Celular" required />
+            <input type="email" id="email" placeholder="Email" required />
+            <input type="text" id="city" placeholder="Ciudad" required />
+            <input type="text" id="country" placeholder="País" required />
+            <button type="submit">Enviar</button>
+            <button type="button" id="clearForm">Limpiar</button>
+        </form>
+        <p id="formMessage"></p>
+
+        <div class="button-container" align = "center">
+            <button class="animated-button" onclick="location.href='pagina2.html'">Volver a la pagina principal</button>
+            <button class="animated-button" onclick="location.href='pagina4.html'">Valoranos</button>
+            <button class="animated-button" onclick="location.href='index.html'">Cerrar Sesión</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="scripts/script_pagina3.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 3: Operaciones Matemáticas</title>
+    <link rel="stylesheet" href="estilos/estilo_pagina4.css">
+</head>
+<body>
+    <header>
+        <h1>Operaciones Matemáticas</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Tabla de Operaciones</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>OPERACIÓN</th>
+                        <th>DESCRIPCIÓN</th>
+                        <th>BOTONES</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>MULTIPLICACIÓN</td>
+                        <td>Multiplica 2 números ingresados</td>
+                        <td><button onclick="multiplicar()">CALCULAR</button></td>
+                    </tr>
+                    <tr>
+                        <td>EXPONENTE 2</td>
+                        <td>Eleva al cuadrado 1 número ingresado</td>
+                        <td><button onclick="elevarCuadrado()">CALCULAR</button></td>
+                    </tr>
+                    <tr>
+                        <td>RESTA</td>
+                        <td>Resta 2 números ingresados</td>
+                        <td><button onclick="restar()">CALCULAR</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="navigation", align = "center">
+            <h2>Navega a las demás páginas:</h2>
+            <div class="buttons-container">
+                <button class="animated-button" onclick="window.location.href='index.html'">Inicio</button>
+                <button class="animated-button" onclick="window.location.href='pagina2.html'">Galería</button>
+                <button class="animated-button" onclick="window.location.href='pagina3.html'">Operaciones</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Derechos reservado por Enzo Coronel - Ñemby - 2024</p>
+    </footer>
+
+    <script src="scripts/script_pagina4.js"></script>
+</body>
+</html>

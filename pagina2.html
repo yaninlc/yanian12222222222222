@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interacción con APIs</title>
+    <link rel="stylesheet" href="estilos/estilo_pagina2.css">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Interacción con APIs</h1>
+    </header>
+    <main>
+        <!-- API para correo -->
+        <section id="email-section">
+            <h2 align="center">Enviar un Correo</h2>
+            <form id="email-form">
+                <input type="text" id="username" placeholder="Tu Nombre" required>
+                <input type="email" id="email" placeholder="Tu Correo" required>
+                <textarea id="message" placeholder="Escribe tu mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="email-status"></p>
+        </section>
+
+        <!-- API para ver imágenes -->
+        <section id="images-section" align="center">
+            <h2>Imágenes Aleatorias</h2>
+            <button id="load-image">Cargar Imagen</button>
+            <div id="image-container"></div>
+        </section>
+
+        <!-- API Opcional (Clima) -->
+        <section id="weather-section" align="center">
+            <h2>Clima y Temperatura segun Latitud y Longitud</h2>
+            <p>Puedes copiar este ejemplo de Asunción: <br> <b>Latitud: </b>-25.28646 y <b>Longitud: </b>-57.647</p>
+            <div>
+                <label for="latitude">Latitud:</label>
+                <input type="text" id="latitude" placeholder="Ej: -25.28646" />
+            
+                <label for="longitude">Longitud:</label>
+                <input type="text" id="longitude" placeholder="Ej: -57.647" />
+            
+                <button id="get-weather">Obtener Clima</button>
+            </div>
+            <p id="weather-result"></p>            
+        </section>
+
+        <!-- Botones de Navegación -->
+        <section id="navigation-buttons">
+            <h2>Navegación</h2>
+            <button onclick="window.location.href='pagina2.html'">Interacciones</button>
+            <button onclick="window.location.href='pagina3.html'">Formulario</button>
+            <button onclick="window.location.href='pagina4.html'">Tabla</button>
+            <button onclick="window.location.href='index.html'" align="left">Cerrar Sesión</button>
+        </section>
+    </main>
+    <script src="scripts/script_pagina2.js"></script>
+    <footer>
+        <p>&copy; Derechos reservado por Enzo Coronel - Ñemby - 2024</p>
+    </footer>
+</body>
+</html>
